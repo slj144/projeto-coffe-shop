@@ -1,7 +1,19 @@
+:root {
+    font-size: 10px;
+    --main-color: #d3ad7f;
+    --black: #131313;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255,255,255,0.3);
+
+}
+
+
 * {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+     text-decoration: none;
+     font-family: "Roboto", sans-serif;
 }
 
 .caixa-video {
@@ -24,7 +36,44 @@
     position: fixed;
     top: 0;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: var(--bg);
+    border-bottom: var(--border);
+    width: 100vw;
+}
 
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 1.5rem 0;
+    position: relative;
+}
 
+.header section a img {
+    height: 6rem;
+}
+
+.header section nav a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+    transition: 0.4s linear;
+}
+.header section nav a:hover{
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
 }
