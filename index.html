@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Cofee Shop</title>
+    <title>Coffee Shop</title>
 </head>
 <body>
     <div class="caixa-video">
@@ -18,48 +18,48 @@
     <header class="header">
         <section>
             <a href="#">
-                  <img src="./img-20241105T171622Z-001/img/logo.png" alt="cafee shop-logo">
+                <img src="./img-20241105T171622Z-001/img/logo.png" alt="coffee shop logo">
             </a>
             <nav>
                 <a href="#">Home</a>
                 <a href="#">About</a>
                 <a href="#">Menu</a>
                 <a href="#">Feedback</a>
-                <a href="#">Address</a>
-
-
+                <a href="#" onclick="mostrarModal()">Address</a>
             </nav> 
-         </section>
-     </header>
+        </section>
+    </header>
 
-   
-          <section class="caixa-principal">
-               <div>
-                <h3>BEST EVER COFFE SHOP IN LONDON</h3>
-                <P>programador saulo leao de jesus feito bom</P>
-                <a>Pay it now</a>
-               </div>
+    <section class="caixa-principal">
+        <div>
+            <h3>Best coffee shop in London</h3>
+            <p>Programmer Saulo Leao de Jesus made it well</p>
+            <a class="botao-link">Pay it now</a>
+        </div>
+    </section>
 
-          </section>
-
-
-     <section>
-          <h2> <span>About</span> Us</h2>
-          <div>
-              <div>
-                   <img src="./img-20241105T171622Z-001/img/about-img.jpeg"
-              </div>
-
-              <div>
-                <h3>What is special About OUR Coffe?</h3>
-                <p> saulo leao de jesus projeto coffe london portifolio aleatorio demorei um dia para fazer </p>
-                <p> saulo leao de jesus projeto coffe london portifolio aleatorio demorei um dia para fazer </p>
-                <a>Learn More</a>
-            
+    <section class="caixa-sobre">
+        <h2 class="titulo"> <span>About</span> Us</h2>
+        <div class="sobre-container">
+            <div class="sobre-imagem">
+                <img src="./img-20241105T171622Z-001/img/about-img.jpeg" />
             </div>
+            <div class="sobre-texto">
+                <h3>What is special about OUR Coffee?</h3>
+                <p> Saulo Leao de Jesus created the coffee shop project in London, a random portfolio piece that took a day to complete </p>
+                <p> Saulo Leao de Jesus created the coffee shop project in London, a random portfolio piece that took a day to complete </p>
+                <a class="botao-link">Learn More</a>
+            </div>
+        </div>
+    </section>
 
-          </div>
-     </section>
-    
+    <div class="modal">
+        <h3 class="titulo"><span>Our</span> Address</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.240225428473!2d-0.19722205910107005!3d51.4904590120583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f8c6fe460b9%3A0xa0644255b5a14057!2sPenywern%20Rd%2C%20London%20SW5%209SX%2C%20Reino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1731000012251!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="mascara-modal"onclick='esconderModal()'></div>
+
+    <script src="./scripts.js"></script>
 </body>
 </html>
