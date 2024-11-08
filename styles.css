@@ -79,13 +79,12 @@ section {
 }
 
 .caixa-principal {
-    min-width: 100vh;
     display: flex;
     align-items: center;
-}
-
-.caixa-principal div {
-    max-width: 60rem;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+    min-height: 100vh;
 }
 
 .caixa-principal div h3 {
@@ -98,9 +97,10 @@ section {
     font-size: 2rem;
     color: #fff;
     font-weight: lighter;
-    padding: 1rem 0;
+    padding: 2rem 0;
     line-height: 1.8;
 }
+
 
 .botao-link {
     background-color: var(--main-color);
